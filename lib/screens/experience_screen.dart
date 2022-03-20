@@ -42,8 +42,8 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
                     ),
                   ),
                   controller: _comanyNameTEC,
-                  onChanged: (value) {
-                    _comanyNameTEC.text = value;
+                  onSaved: (value) {
+                    _comanyNameTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty name'
@@ -60,8 +60,8 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
                     icon: Icon(Icons.link),
                   ),
                   controller: _websiteTEC,
-                  onChanged: (value) {
-                    _websiteTEC.text = value;
+                  onSaved: (value) {
+                    _websiteTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty url'
@@ -80,8 +80,8 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
                     ),
                   ),
                   controller: _designationTEC,
-                  onChanged: (value) {
-                    _designationTEC.text = value;
+                  onSaved: (value) {
+                    _designationTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty designation'
@@ -101,8 +101,8 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
                   ),
                   maxLength: 100,
                   controller: _jobDescTEC,
-                  onChanged: (value) {
-                    _jobDescTEC.text = value;
+                  onSaved: (value) {
+                    _jobDescTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty Description'

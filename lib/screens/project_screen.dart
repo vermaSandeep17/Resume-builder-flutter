@@ -41,8 +41,8 @@ class _ProjectScreenState extends State<ProjectScreen> {
                     ),
                   ),
                   controller: _titleTEC,
-                  onChanged: (value) {
-                    _titleTEC.text = value;
+                  onSaved: (value) {
+                    _titleTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty title'
@@ -59,8 +59,8 @@ class _ProjectScreenState extends State<ProjectScreen> {
                     ),
                   ),
                   controller: _guideTEC,
-                  onChanged: (value) {
-                    _guideTEC.text = value;
+                  onSaved: (value) {
+                    _guideTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty Name'
@@ -78,8 +78,8 @@ class _ProjectScreenState extends State<ProjectScreen> {
                     ),
                   ),
                   controller: _durationTEC,
-                  onChanged: (value) {
-                    _durationTEC.text = value;
+                  onSaved: (value) {
+                    _durationTEC.text = value!;
                   },
                   validator: (val) =>
                       val!.length == 0 ? 'Empty Duration' : null,
@@ -94,8 +94,8 @@ class _ProjectScreenState extends State<ProjectScreen> {
                     ),
                   ),
                   controller: _detailTEC,
-                  onChanged: (value) {
-                    _detailTEC.text = value;
+                  onSaved: (value) {
+                    _detailTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty Details'

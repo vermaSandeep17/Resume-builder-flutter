@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             Card(
               margin: EdgeInsets.all(10),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Text(
                   'Resume Builder',
                   style: TextStyle(

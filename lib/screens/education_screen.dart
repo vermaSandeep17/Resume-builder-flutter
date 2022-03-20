@@ -40,8 +40,8 @@ class _EducationScreenState extends State<EducationScreen> {
                     ),
                   ),
                   controller: _collegeTEC,
-                  onChanged: (value) {
-                    _collegeTEC.text = value;
+                  onSaved: (value) {
+                    _collegeTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty name'
@@ -60,8 +60,8 @@ class _EducationScreenState extends State<EducationScreen> {
                     ),
                   ),
                   controller: _universityTEC,
-                  onChanged: (value) {
-                    _universityTEC.text = value;
+                  onSaved: (value) {
+                    _universityTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty name'
@@ -80,8 +80,8 @@ class _EducationScreenState extends State<EducationScreen> {
                     ),
                   ),
                   controller: _courseTEC,
-                  onChanged: (value) {
-                    _courseTEC.text = value;
+                  onSaved: (value) {
+                    _courseTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty course'
@@ -98,8 +98,8 @@ class _EducationScreenState extends State<EducationScreen> {
                     icon: Icon(Icons.grade),
                   ),
                   controller: _gradeTEC,
-                  onChanged: (value) {
-                    _gradeTEC.text = value;
+                  onSaved: (value) {
+                    _gradeTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0 ? 'Empty Grade' : null,
                 ),

@@ -41,8 +41,8 @@ class _PersonScreenState extends State<PersonScreen> {
                     ),
                   ),
                   controller: _nameTEC,
-                  onChanged: (value) {
-                    _nameTEC.text = value;
+                  onSaved: (value) {
+                    _nameTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty name'
@@ -61,8 +61,8 @@ class _PersonScreenState extends State<PersonScreen> {
                     ),
                   ),
                   controller: _designationTEC,
-                  onChanged: (value) {
-                    _designationTEC.text = value;
+                  onSaved: (value) {
+                    _designationTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty Designation'
@@ -82,8 +82,8 @@ class _PersonScreenState extends State<PersonScreen> {
                     ),
                   ),
                   controller: _cityTEC,
-                  onChanged: (value) {
-                    _cityTEC.text = value;
+                  onSaved: (value) {
+                    _cityTEC.text = value!;
                   },
                   validator: (val) => val!.length == 0
                       ? 'Empty City'
